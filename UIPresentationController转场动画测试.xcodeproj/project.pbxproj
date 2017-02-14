@@ -15,6 +15,9 @@
 		28006AA81CC617B50026521A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28006AA61CC617B50026521A /* LaunchScreen.storyboard */; };
 		28006AB31CC617B50026521A /* UIPresentationController______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28006AB21CC617B50026521A /* UIPresentationController______Tests.m */; };
 		28006ABE1CC617B50026521A /* UIPresentationController______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28006ABD1CC617B50026521A /* UIPresentationController______UITests.m */; };
+		28006ACD1CC618010026521A /* PopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28006ACC1CC618010026521A /* PopoverPresentationController.m */; };
+		28D56C311CC710AC00F5DCB2 /* PresentedViewTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D56C301CC710AC00F5DCB2 /* PresentedViewTransition.m */; };
+		28D56C341CC7177500F5DCB2 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D56C331CC7177500F5DCB2 /* PresentedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		28006AB91CC617B50026521A /* UIPresentationController转场动画测试UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIPresentationController转场动画测试UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28006ABD1CC617B50026521A /* UIPresentationController______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIPresentationController______UITests.m"; sourceTree = "<group>"; };
 		28006ABF1CC617B50026521A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28006ACB1CC618010026521A /* PopoverPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverPresentationController.h; sourceTree = "<group>"; };
+		28006ACC1CC618010026521A /* PopoverPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverPresentationController.m; sourceTree = "<group>"; };
+		28D56C2F1CC710AC00F5DCB2 /* PresentedViewTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewTransition.h; sourceTree = "<group>"; };
+		28D56C301CC710AC00F5DCB2 /* PresentedViewTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewTransition.m; sourceTree = "<group>"; };
+		28D56C321CC7177500F5DCB2 /* PresentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		28D56C331CC7177500F5DCB2 /* PresentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				28006A9C1CC617B40026521A /* AppDelegate.m */,
 				28006A9E1CC617B40026521A /* ViewController.h */,
 				28006A9F1CC617B50026521A /* ViewController.m */,
+				28D56C321CC7177500F5DCB2 /* PresentedViewController.h */,
+				28D56C331CC7177500F5DCB2 /* PresentedViewController.m */,
+				28006ACB1CC618010026521A /* PopoverPresentationController.h */,
+				28006ACC1CC618010026521A /* PopoverPresentationController.m */,
+				28D56C2F1CC710AC00F5DCB2 /* PresentedViewTransition.h */,
+				28D56C301CC710AC00F5DCB2 /* PresentedViewTransition.m */,
 				28006AA11CC617B50026521A /* Main.storyboard */,
 				28006AA41CC617B50026521A /* Assets.xcassets */,
 				28006AA61CC617B50026521A /* LaunchScreen.storyboard */,
@@ -274,6 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				28006AA01CC617B50026521A /* ViewController.m in Sources */,
+				28006ACD1CC618010026521A /* PopoverPresentationController.m in Sources */,
+				28D56C311CC710AC00F5DCB2 /* PresentedViewTransition.m in Sources */,
+				28D56C341CC7177500F5DCB2 /* PresentedViewController.m in Sources */,
 				28006A9D1CC617B40026521A /* AppDelegate.m in Sources */,
 				28006A9A1CC617B40026521A /* main.m in Sources */,
 			);
@@ -501,6 +519,7 @@
 				28006AC41CC617B50026521A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28006AC51CC617B50026521A /* Build configuration list for PBXNativeTarget "UIPresentationController转场动画测试Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +528,7 @@
 				28006AC71CC617B50026521A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28006AC81CC617B50026521A /* Build configuration list for PBXNativeTarget "UIPresentationController转场动画测试UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +537,7 @@
 				28006ACA1CC617B50026521A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

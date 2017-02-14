@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "PresentedViewController.h"
 @interface ViewController ()
 
 @end
@@ -17,11 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor=[UIColor whiteColor];
+    UIButton *btn=[UIButton buttonWithType:UIButtonTypeCustom];
+    btn.frame=CGRectMake(100, 100, 100, 100);
+    [self.view addSubview:btn];
+    btn.backgroundColor=[UIColor redColor];
+    [btn addTarget:self action:@selector(btnMenthod) forControlEvents:UIControlEventTouchUpInside];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)btnMenthod
+{
+    NSLog(@"按钮点击了");
+    PresentedViewController *pre = [PresentedViewController new];
+    [self presentViewController:pre animated:true completion:nil];
+    
 }
 
 @end
